@@ -1,0 +1,21 @@
+/* 自定义 6 色大报纸板块的精美阴影 */
+:root {
+  --anzhiyu-shadow-orange: 0 8px 16px -4px rgba(255, 126, 61, 0.3);
+  --anzhiyu-shadow-purple: 0 8px 16px -4px rgba(122, 92, 255, 0.3);
+  --anzhiyu-shadow-pink: 0 8px 16px -4px rgba(255, 92, 147, 0.3);
+}
+
+/* 赋予卡片专属的背景色 */
+.categoryButton.orange { background: #ff7e3d !important; color: #fff !important; }
+.categoryButton.purple { background: #7a5cff !important; color: #fff !important; }
+.categoryButton.pink   { background: #ff5c93 !important; color: #fff !important; }
+
+/* 确保新卡片内的文字和图标全部强制渲染为白色 */
+.categoryButton.orange .categoryButtonText,
+.categoryButton.purple .categoryButtonText,
+.categoryButton.pink   .categoryButtonText,
+.categoryButton.orange i,
+.categoryButton.purple i,
+.categoryButton.pink   i {
+  color: #fff !important;
+}
