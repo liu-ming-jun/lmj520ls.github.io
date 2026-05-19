@@ -28,3 +28,15 @@ img {
   display: block;
   margin: 0 auto; /* 居中显示 */
 }
+/* 强制让侧边栏微信卡片的正面和背面图片完美自适应 */
+.card-weixin img,
+[class*="card_weixin"] img,
+[class*="weixin"] img {
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  box-sizing: border-box;
+  padding: 5px;          /* 适当加一点内边距，防止图片紧贴卡片边缘 */
+  background: #fff;      /* 强行给二维码套一个白底，防止背景色冲突 */
+  border-radius: 12px;   /* 给二维码图片本身加点小圆角，呼应 Butterfly 主题风格 */
+}
